@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ouroboros Publication</title>
+        <link rel="stylesheet" href="style.css">  <!---CSS stylesheet is used locally-->
+        <link href="webfonts/css/fontawesome.css" rel="stylesheet"> <!-- font awesome icon is used locally-->
+        <link href="webfonts/css/brands.css" rel="stylesheet">
+        <link href="webfonts/css/solid.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <!----Page header section will be here
+            Header includes logo, manu bar and search button--->
+            <div class="logo-design">
+                <div class="logo-image">
+                    <img src="images/logo.png" alt="Ouroboros logo" width="100px" height="110px">
+                </div>
+                <div class="logo-title">
+                    <h1><a href="index.html">Ouroboros </a></h1>
+                    <h3>We create books</h3>
+                </div>
+            </div>
+            
+            
+                <!----navigation menu will be here--->
+            <input type="checkbox" id = "nav-toggle" class="nav-toggle">    
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="author.html"><i class="fas fa-edit"></i>Author</a></li>
+                    <li><a href="aboutus.html"><i class="fas fa-users"></i>About Us</a></li>
+                    <li><a href="report.html"><i class="fas fa-file-alt"></i> Report </a></li>
+                </ul>
+            </div>
+
+            <label for="nav-toggle" class="toggle-button">
+                <span></span>
+            </label>
+                
+          
+        </header>
+        
+        <div class="banner-title">
+            <!---This is the title of the page.
+            there will be banner in this section-->
+            <h1><strong>Report</strong></h1>
+            <h3><em>Your Success is Our Success</em></h3>
+            <section>
+                <!--This section is for search button.
+                But this feature is omited. 
+                because search option is out of the scope of this project.-->
+                <!--
+                    <input name="name" type="search" placeholder="Search by Author/ISBN/">
+                    ---->
+            </section>
+        </div>
+        
+        <div class="body-container">
+            
+            <section>
+               
+                <div class="table-content">
+                    <h1> Table of Content </h1>
+                    <ol>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#prop">Proposal</a></li>
+                        <li><a href="#overall">Overall Design structure</a></li>
+                        <li><a href="#htcs">HTML/CSS3</a></li>
+                            <ol>
+                                <li><a href="#struct">HTML5 structure</a></li>
+                                <li><a href="#style">CSS3 Style and page format</a></li>
+                                <li><a href="#responsive">CSS3 Responsiveness</a></li>
+                                <li><a href="#access">Accesibility</a></li>
+                            </ol>
+                        
+                        <li><a href="#scope">Scope</a></li>
+                        <li><a href="#ref">Reference</a></li>
+                    </ol>
+                </div>
+                
+                <hr>
+
+                <h2 id="intro"> Introduction</h2>
+                <p>Hornshell is a software development company in the market for last 10 years. Our specialization in front end web development puts us in a leading position while so many other companies in the market offers their products without knowing product integrity.
+                We hear from the potential customer about their requirements without any consultation fee and it is face to face. So that we can understand your business needs and explore potential market growths. We always believe better customer relation is the key for growth for your business as well as our business.</p>
+                <h2 id="prop">Proposal</h2> 
+                As a valued customer “Ouroboros Publication” has decided to expand their business on inline world. They want to establish a web site for emerging writers and existing customers to facilitate encouraging and supportive environments.
+                On the basis of Ouroboros publication’s expectation we have developed a demonstration website that fulfill their business nature. We can ensure our potential client that our website maintain uptodate web standard, accessible by all type of customers and this website responsive on any device.
+                <h2 id="overall">Overall Design structure:</h2>
+                <p>Website is the face of a company on online world. So company’s history, their mission, their potential and existing customers, everything needs to be in consideration while developing a website. Based on company profile two tone color in used throughout the website. Top navigation bar and bottom footer section color coated in darkslategray which resembles young and new comers for inspiration and body section color coated in old book papers color which resembles company’s long history in the development of publications.
+                Based on client’s expectations and from our understanding we have categorized in three types of visitors for the website:
+                <ol>
+                    <li>Prospective Writers</li>
+                    <li>Avid Reader and</li>
+                    <li>Ghost visitors</li>
+                </ol>
+                </p>
+                	
+                <p>Keeping in mind all these three types visitors we have designed our website in a way that is concise and visually easy to access information, and easy to navigate to the website.
+                When the world is moving towards hand held small device for that rason we maintained our website responsive; but we did not forget a significant number of users in large screen. In a very large screen website needs to be spread across but information needs to be visually concise. That’s why our navigation, banner and footer section will spread across the screen but body section will maintain standard 940px width.
+                Logo design and images: we have redesigned the company logo using inkscape. A company logo carries the identity of that company. Keeping in mind the company heritage and its mission we designed the logo accordingly. Only from the logo one can get the information about its mission where a book spreads light of a candle. Company logo carries the information about company name and its establishment.
+                Other images are collected from internet and their reference is provided at the end of the document.</p>
+                <h2 id="htcs"> HTML5/CSS3</h2>
+                    <ul>
+                        <li><h3 id="struct">HTML5 Structure</h3>
+                            <p>We have maintained WHATWG industry standard specification throughout our html5 development. Proper indentation and side notes are used for readability and debugging.
+                            </p>
+                        </li>
+                        <li><h3 id="style">CSS3 Style and Page Format</h3>
+                            <p>Overall we have divided our layout in four sections</p>
+                                <ol>
+                                    <li><h4>Header section</h4>
+                                        <p>In this section we align our logo, brand name and manu bar using <code>flex-wrap: wrap</code> property so that it fits all sized device
+                                        </p>
+                                    </li>
+                                    <li><h4>Banner section</h4>
+                                        <p>Banner section carries the page mode. So accordingly title and banner image is changed in inline style.
+                                        </p>
+                                    </li>
+                                    <li><h4>Body section</h4>
+                                        <p>Our main information will be carried in this section. This section is configured using <code>body-container</code> selector in css3
+                                        </p>
+                                    </li>
+                                    <li><h4>Footer section</h4>
+                                        <p>We have used two columns for footer section and a section for copyright information.
+                                        </p>
+                                    </li>
+                                </ol>
+                        </li>
+                        <li><h3 id="responsive">CSS3 Responsiveness</h3>
+                            <p>When design the structure of the page we always keep in mind that the page has to be responsive. That’s why in most cases we used <code>flex</code>  attribute to layout the page with css selectors. That’s why our website is fit or any size device. To further the responsiveness, we used <code>@media</code>  at 700px and 508px to hide out regular navigation bar. 
+                            </p>
+
+                        </li>
+                        <li><h3 id="access">Accesibility</h3>
+                            <p>Our website is accessible for visually impaired users. We have taken specal care for proper alt description for any image used in the website. This website is also <strong>printer friedly</strong>. We have used <code>print @media</code>  query to omit out images when a webpage will be used for printing. That will save the user unnecessary printing cost.</p>
+                        </li>
+                    </ul>
+                <h2 id="scope">Scope of the Report</h2>
+                    <p><strong>Logo-design:</strong> Logo color is not matching with the brand name including overall page design. It need to be some bright color. In next update it can be fixed.</p>
+                    <p><strong>Search button:</strong> A search button is very important for this kind of webpage. It gives the visitors more flexibility to search for specific content in the page. But in clients request in was omitted. Besides database is also out of the scope of this report which is essential for search option.</p>
+                    <p><strong>Contact form:</strong> For potential writers a contact form is essential. But for that back-end development is need as well which is out of the scope of this report. We tried to make this website as much functional as possible</p>
+                <h2 id="ref">Reference</h2>
+                <p> <ul>
+                        <li>https://saultonline.com/event/poetry-reading-book-signing/ </li>
+                        <li> https://www.barringtonbooksretold.com/</li>
+                        <li> https://avalonlibrary.org/writing-group/</li>
+                        <li>https://bookhub.online/for-authors </li>
+                        <li>https://www.entrepreneur.com/article/283685</li>
+                        <li>https://www.incimages.com/uploaded_files/image/1920x1080/getty_496612468_2000138820009280460_336567.jpg 
+                        </li>
+                        <li>https://images.ctfassets.net/cnu0m8re1exe/4KwrJVfCGeyOKwm8PS2tjI/30026753d97e3b41a50560063126ded8/shutterstock_135114548.jpg?w=650&h=433&fit=fill 
+                        </li>
+                        <li>https://www.hachette.com.au/michael-robotham/ </li>
+                        <li>https://www.hachette.com.au/fiona-palmer/</li>
+                        <li>https://www.hachette.com.au/stephenie-meyer/</li>
+                        <li>https://www.hachette.com.au/michael-robotham/good-girl-bad-girl-cyrus-haven-book-1 
+                        </li>
+                        <li>https://www.hachette.com.au/michael-robotham/the-suspect </li>
+                        <li> https://www.hachette.com.au/michael-robotham/the-secrets-she-keeps-the-1-international-bestseller 
+                        </li>
+                        <li>https://www.hachette.com.au/michael-robotham/lost</li>
+                        <li>https://www.hachette.com.au/fiona-palmer/</li>
+                        <li>https://www.hachette.com.au/fiona-palmer/tiny-white-lies</li>
+                        <li> https://www.hachette.com.au/fiona-palmer/matters-of-the-heart </li>
+                        <li> https://www.hachette.com.au/fiona-palmer/sisters-and-brothers</li>
+                        <li>https://www.hachette.com.au/fiona-palmer/secrets-between-friends-the-australian-bestseller
+                        </li>
+                        <li>https://www.hachette.com.au/stephenie-meyer/ </li>
+                        <li> https://www.hachette.com.au/stephenie-meyer/midnight-sun </li>
+                        <li> https://www.hachette.com.au/stephenie-meyer/twilight-twilight-book-1</li>
+                        <li> https://www.hachette.com.au/stephenie-meyer/new-moon </li>
+                        <li> https://www.hachette.com.au/stephenie-meyer/twilight-tenth-anniversary-life-and-death-dual-edition
+                        </li>
+                        <li>https://html.spec.whatwg.org/</li>
+                        <li> https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+                        </li>
+                        <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element</li>
+                        <li>https://inkscape.org/</li>
+                    </ul>
+               
+                </p>    
+            </section>
+
+            <hr>            
+            <section>
+                <!---feature for current authors--->
+                <h3>Our Authors</h3>
+                <div class="author-feature author-list">
+                    
+                    <figure>
+                        <a href="/author/michael.html">
+                        <img src="images/author/michael/michael-robotham-feature.jpg" alt="picture of an Author" width="200" height="300">
+                        </a>
+                        <figcaption>Michael Robotham</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/author/fiona.html">
+                        <img src="images/author/fiona/fiona-palmer-feature.jpg" alt="picture of an Author" width="200" height="300">
+                        </a>
+                        <figcaption>Fiona Palmer</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/author/stephene.html">
+                        <img src="images/author/stephene/stephene-meyer-feature.jpg" alt="picture of an Author" width="200" height="300">
+                        </a>
+                        <figcaption>Stephene Meyer</figcaption>
+                    </figure>
+
+                </div>
+                <hr>
+            </section>
+            
+        </div>
+        <footer>
+            <!-- Foote r will go here 
+            Copy Right information & Contacts-->
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p>Links</p>
+                    <a href="index.html">Home</a></br>
+                    <a href="author.html">Austhors</a></br>
+                    <a href="aboutus.html">About us</a></br>
+                    <a href="contact.html">Contact us</a>
+                   
+
+                </div>
+                <div class="footer-col">
+                    <p>Contact us</p>
+                    <Address>134 Hill Road
+                        RunCcorn, QLD 4113
+                        Australia
+                    </Address>
+                    <p>Phone: +61 07 234 567</p>
+                </div>
+            </div>
+            <div class="copyright">copyright &#169; 2020-2021 by Hornshell. All rights reserved</div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,403 @@
+
+/* Start with formating the page */
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+p{
+    font-size: 18px;
+}
+/* Design Header section including navigation bar */
+
+header{
+    background: darkslategray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    height: auto;
+    width: auto;
+
+}
+
+/* Logo & Brand Name design */
+.logo-design{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    padding: 12px 40px;
+} 
+.logo-design div{
+    display: inline-block;
+}
+.logo-title h1 a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.logo-title h1,h3{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+.logo-title h1{
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+    
+
+/** --- navigation section design -- **/
+
+.navbar-links{
+    /*flex: 1;*/
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    justify-content: space-around;
+
+    margin: 0px;
+    padding: 0px 0px;
+    height: auto;
+    width: auto;
+}
+.navbar-links ul{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block; 
+    align-content: center;
+    justify-content: space-around;
+   
+}
+.navbar-links ul li{
+    display: inline-block;
+    /*background: burlywood; */
+    list-style-type:none;
+    width: 100px; 
+  
+    height: 30px;
+    padding: 5px 5px;
+}
+
+.navbar-links ul li a {
+    padding: 0px;
+    
+}
+
+.navbar-links .fas{
+    margin-right: 10px;
+}
+.navbar-links ul li:hover{
+   
+    background: burlywood;
+}
+
+
+
+/* Design nav bar for Responsive screen */
+.toggle-button{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 10%;
+    padding: 1px;
+}
+.nav-toggle{
+    display: none;
+}
+
+.toggle-button span,
+.toggle-button span::before,
+.toggle-button span::after
+    {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 40px;
+    position: relative;
+}
+.toggle-button span::before,
+.toggle-button span::after{
+    content: '';
+    position:absolute;
+}
+.toggle-button span::before{
+    bottom: 8px;
+}
+.toggle-button span::after{
+    top: 8px;
+}
+
+
+@media (max-width: 700px){
+
+              
+    .navbar-links{
+      display: none;
+    }
+    .toggle-button{
+        display: block;
+        top:150px;
+    }
+    .nav-toggle:checked ~ .navbar-links{
+        display: block;
+    }
+
+    .navbar-links ul{
+        width:100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li{
+        text-align: center;
+        list-style-type:none;
+        width: 100%;
+        height: 30px;
+        
+    }
+    .navbar-links ul li a{
+        padding: 1px 0px;
+        margin: 1px 0px;
+
+    }
+    .navbar-links ul li:hover{
+        background: burlywood;
+        
+        
+    }
+}
+
+@media (max-width: 508px){
+    .toggle-button{
+        top: 220px;
+    }
+    
+}
+
+
+/* Design banner section where our title is */
+.banner-title{
+    background: gray;
+    background-image: url("images/title.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:15px;
+    top: -20px;
+    height: 300px;
+}
+.banner-title h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.banner-title h3{
+    margin-top: 0;
+    text-align: center;
+}
+
+/* design our body feature section as body container*/
+
+.body-container{
+    background: radial-gradient(rgb(250, 248, 248),rgb(238, 206, 190));
+    max-width: 940px;
+    padding:15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: gray 0px 0px 15px;
+    position: relative;
+   
+}
+
+/* design 'who we are' section */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items:top;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 10px;
+}
+.col-2{
+    flex-basis: 48%;
+    margin: 0px 5px;
+    
+}
+.col-2 p{
+    width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding:0;
+   /* border: 1px solid white; */
+    border-radius: 10px;
+    box-shadow: gray 0 4px 4px; 
+    width:400px;
+    border-block-start: currentColor;
+    z-index: 1;
+    opacity: 0.5;      
+}
+.col-2 img:hover{
+    max-width: 100%;
+    padding:0;
+   border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: gray 0 4px 4px; 
+    width:400px;
+    opacity: 0.8;
+    
+          
+}
+.btn{
+    display: inline-block;
+    background: burlywood;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: hsl(39, 81%, 70%);
+}
+
+
+/* Here we will design third section of 
+the body containter about fearured author */
+
+.author-feature{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.author-feature figure{
+    color: grey;
+    height: 320px;
+    width: 210px; 
+    margin: auto;
+    padding: 20px;
+    
+}
+.author-feature figure img{
+    display: inline-block
+        
+}
+
+.author-feature figure img:hover{
+
+    
+    border: 2px solid darkslategray;
+    box-shadow: gray 5px 5px 6px; 
+    transition: .2s;
+}
+
+/* table of content In Report page */
+.table-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table-content li a{
+    color: black;
+    padding: 5px;
+}
+
+/* footer design goes here */
+
+footer{
+    
+    height:auto;
+    background: darkslategrey;
+    color: whitesmoke;
+}
+.footer-row{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+        
+}
+.footer-col{
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+}
+.copyright{
+    padding: 10px;
+    text-align: center;
+}
+
+/**............**/
+
+/** Author Page(michael,fiona,stephene) Design **/
+.au-col-2{
+    flex-basis: 50%;
+}
+
+.col-2 p a, .au-col-2 p a,.b1-col-2 p a {
+    color: blue;
+
+}
+
+.books-content{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.au-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 10px;
+    justify-content:space-around;
+}
+.b1-col-1{    
+    flex-basis: 25%;
+    padding: 5px;
+}
+.b1-col-2{
+    flex-basis: 65%;
+    padding: 5px;
+}
+.b1-col-2 h3{
+    text-indent: -20px;
+
+}
+
+/*..... About us Page design */
+.about-row{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.about-row .about-col-1{
+    flex: 1;
+    flex-basis: 55%;
+    height: auto;
+}
+.about-row .about-col-2{
+    flex-basis:30%;
+    height: auto;
+    padding: 5px;
+}
+
+/* Print Querry */
+@media print{
+    .col-2 img, .author-feature figure, 
+    .col-1 img, .about-col-2 img, 
+    .au-col-2 img, .b1-col-1 img{
+        display: none;
+
+    }
+
+}
