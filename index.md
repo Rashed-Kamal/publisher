@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ouroboros Publication</title>
+        <link rel="stylesheet" href="style.css">  <!---CSS stylesheet is used locally-->
+        <link href="webfonts/css/fontawesome.css" rel="stylesheet"> <!-- font awesome icon is used locally-->
+        <link href="webfonts/css/brands.css" rel="stylesheet">
+        <link href="webfonts/css/solid.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <!----Page header section will be here
+            Header includes logo, manu bar and search button--->
+            <div class="logo-design">
+                <div class="logo-image">
+                    <img src="images/logo.png" alt="Ouroboros logo" width="100px" height="110px">
+                </div>
+                <div class="logo-title">
+                    <h1><a href="index.html">Ouroboros </a></h1>
+                    <h3>We create books</h3>
+                </div>
+            </div>
+            
+            
+                <!----navigation menu will be here--->
+            <input type="checkbox" id = "nav-toggle" class="nav-toggle">    
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="author.html"><i class="fas fa-edit"></i>Author</a></li>
+                    <li><a href="aboutus.html"><i class="fas fa-users"></i>About Us</a></li>
+                    <li><a href="report.html"><i class="fas fa-file-alt"></i> Report </a></li>
+                </ul>
+            </div>
+
+            <label for="nav-toggle" class="toggle-button">
+                <span></span>
+            </label>
+                
+          
+        </header>
+        
+        <div class="banner-title">
+            <!---This is the title of the page.
+            there will be banner in this section-->
+            <h1><strong>Ouroboros Publication</strong></h1>
+            <h3><em>We create books</em></h3>
+            <section>
+                <!--This section is for search button.
+                But this feature is omited. 
+                because search option is out of the scope of this project.-->
+                <!--
+                    <input name="name" type="search" placeholder="Search by Author/ISBN/">
+                    ---->
+            </section>
+        </div>
+        
+        <div class="body-container">
+            <section>
+                <!-- From here our 'who we are section start. it will have 
+                    two column in a row. First column will be short description of
+                     the company and second column will have a relevent picture'-->
+
+                <div class="row"> 
+                    
+                    <div class="col-2">   
+                        
+                        <!----this section will be about the company---->
+                        <h2>Who we are</h2>
+                        <p> Ouroboros has established in 1987 and since then become prominent part of 
+                            Australian Publication history. Every year we publish more than 500 books 
+                            for our interested readers including international market. We put our best
+                            effort to reach out our readers..</p>                         
+                            <a href="aboutus.html" class="btn">Learn more  &#8594</a>
+                        
+                    </div>   
+                    <div class="col-2">
+                        <img src="images/we.jpg" alt="lots of books">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+            <!-----this section will be about interested authors --->
+                <div class ="row">
+                    <div class="col-2">
+                        <img src="images/author.jpg" alt="author picture">
+                        
+                    </div>
+                    <div class="col-2">
+                        <h2> Our Authors</h2>
+
+                        <p> We have contract with a range of prominent authors from kids writings,
+                            novel to scitific articale writing. When the market is full of less valued 
+                            books that are off interested to readers, we work tiredlessly to bring the 
+                            best for our readers. We promote new writers to come into this industry and 
+                            encourage them with various programs.</p>
+                            <a href="author.html" class="btn">Learn more  &#8594</a>
+                    </div>
+
+                </div>
+                <hr>
+            </section>
+            <section>
+                <!---feature for current authors--->
+                <h3>Our Authors</h3>
+                <div class="author-feature author-list">
+                    
+                    <figure>
+                        <a href="/author/michael.html">
+                        <img src="images/author/michael/michael-robotham-feature.jpg" alt="picture of an Author" width="200" height="300">
+                        </a>
+                        <figcaption>Michael Robotham</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/author/fiona.html">
+                        <img src="images/author/fiona/fiona-palmer-feature.jpg" alt="picture of an Author" width="200" height="300">
+                        </a>
+                        <figcaption>Fiona Palmer</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/author/stephene.html">
+                        <img src="images/author/stephene/stephene-meyer-feature.jpg" alt="picture of an Author" width="200" height="300">
+                        </a>
+                        <figcaption>Stephene Meyer</figcaption>
+                    </figure>
+
+                </div>
+                <hr>
+            </section>
+            
+        </div>
+        <footer>
+            <!-- Footer will go here 
+            Copy Right information & Contacts-->
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p>Links</p>
+                    <a href="index.html">Home</a></br>
+                    <a href="author.html">Austhors</a></br>
+                    <a href="aboutus.html">About us</a></br>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div class="footer-col">
+                    <p>Contact us</p>
+                    <Address>134 Hill Road
+                        RunCcorn, QLD 4113
+                        Australia
+                    </Address>
+                    <p>Phone: +61 07 234 567</p>
+                </div>
+            </div>
+            <div class="copyright">copyright &#169; 2020-2021 by Hornshell. All rights reserved</div>
+        </footer>
+    </body>
+</html>
